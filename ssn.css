@@ -1,0 +1,82 @@
+
+body{
+   padding: 0;
+   margin:0;
+   font-family: sans-serif;
+   background: url(kham9.png)no-repeat;
+   background-size: cover;
+}
+form{
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 350px;
+height:420px;
+border: 5px solid #f8f6f6;
+border-radius: 15px;
+transition: 0.5s ease;
+padding: 40px;
+
+}
+form :hover{
+    box-shadow: 3px 3px 50px #0077ff;
+}
+img{
+    position: absolute;
+    top: -80px;
+    left: 100px;
+    border-radius: 90px;
+}
+h2{
+    color: #e6cfcf;
+    text-align: center;
+    margin-top: 90px;
+}
+[type="text"],[type="password"]{
+position: absolute;
+outline: none;
+border: none;
+width: 250px;
+height:35px;
+border-bottom: 2px solid rgba(239, 239, 243, 0.267);
+background: none;
+padding: 5px;
+color: #f8f6f6;
+}
+
+[type="text"]{
+top: 160px;
+left: 50px;
+}
+[type="password"]{
+    top: 210px;
+    left: 50px;
+}
+[type="submit"]{
+    position: absolute;
+    top:305px;
+    left: 110;
+    width: 130px;
+    height: 35px;
+    background: #0077ff;
+    border: none;
+    outline: none;
+    color: #f8f6f6;
+    border-radius: 15px;
+    font-size: 20px;
+}
+[type="submit"]:hover{
+background: #5e57ec;
+color: rgb(78, 91, 91);
+}
+label{
+    position: absolute;
+    top: 90%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(28, 25, 25);
+    font-weight: 500;
+    
+}

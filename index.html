@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel ="stylesheet" href="sty.css">
+<body>
+
+
+<!-- Navigation -->
+
+<header>
+  <section>
+<img class="Archive" src="images/logo.png" style="width: 150px;">
+  </section>
+<nav class="navi">
+<a href="index.php">Services</a>
+<a href="#">Search</a>
+<a href="#footer">Contact</a>
+<button class="btnlogin-popup">logout</button>
+</nav>
+</header>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="images/saudi.jpg"  style="width: 1550px; height:780px;">
+  <img class="mySlides" src="images/saudi2.png" style="width: 1550px; height:780px;">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="Archive">البحث عن معاملة</h2>
+  <div class="container">
+    <form action="search.php" method="post" class="search-bar">
+        <input type="text" placeholder="search anything" name="search" autocomplete="off">
+        <button type="submit" name='submit'><img src="images/search.png"></button>
+
+    </form>
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://twitter.com/datalogytech"><i class="fa fa-twitter"></i></a>
+  <p class="w3-medium">
+  <a href = "mailto: DatalogyTech@gmail.com"> Contact us</a></p>
+  <p class="w3-medium">
+  Powered by DATALOGY </p>
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
